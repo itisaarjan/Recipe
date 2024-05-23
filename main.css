@@ -17,7 +17,7 @@ body{
     background-color: #F3E5D7;
 }
 #main-container{
-    height: 736px;
+    height: 756px;
     width: 352px;
     background-color: white;
     border-radius: 10px;
@@ -26,11 +26,13 @@ body{
     top: 80px;
     padding: 18px;
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 #image-container{
     width: 352px;
+    margin: 0px;
+    margin-bottom: 10px;
 }
 #image-container img{
     width: 100%;
@@ -38,10 +40,11 @@ body{
 }
 
 #content-container{
-    padding: px;
-    border: 2px solid blue;
+    padding: 0px;
+    /* border: 2px solid blue; */
     width: 352px;
 }
+
 #content-container h3{
     text-align: left;
     font-family: "Young Serif", serif;
@@ -50,7 +53,7 @@ body{
 
 }
 #title p{
-    font-size: 9px;
+    font-size: 7px;
     text-align: left;
     font-family: "Outfit", sans-serif;
     font-weight: 200;
@@ -59,16 +62,18 @@ body{
 }
 
 #title{
-    margin-bottom: 32px;
+    margin-bottom: 10px;
 }
 #preparation{
     background-color: #FFECF5 ;
     padding: 0px;
+    padding-bottom: 10px;
     font-family: "Outfit", "sans-serif";
     width: 100%;
     color: #5F564D;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 #preparation h6{
     text-align: left;
@@ -81,7 +86,7 @@ body{
     font-size: 8px;   
     padding: 0px;
     line-height: 15px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
 }
 #prep-list ul{
@@ -90,6 +95,109 @@ body{
     padding-left: 20px;
     margin: 0px;
 }
-#prep-list ul li{
+#prep-list ul li::marker{
     color: #7A284E;
+}
+#ingredients{
+    /* border: 2px solid brown; */
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+}
+#ingredients h5{
+    color: #854632;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Young Serif", serif;
+}
+#ingredients ul{
+    padding: 0px;
+    font-size: 8px;
+    text-align: left;
+    padding-left:12px ;
+    line-height: 13px;
+    font-family: "Outfit", "sans-serif";
+}
+#ingredients ul li::marker{
+    color: #854632;
+}
+#instructions{
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+}
+#instructions h5{
+    margin: 0px;
+    text-align: left;
+    color: #854632;
+    font-family: "Young Serif", serif;
+}
+#instructions ol{
+    font-size: 8px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    font-family: "Outfit", "sans-serif";
+    color: #5F564D;
+    line-height: 12px;
+}
+#instructions ol li{
+    padding-left: 10px;
+}
+.step-header{
+    font-weight: 500;
+}
+#instructions ol li::marker{
+    font-size: 8px;
+    color: #854632;
+    font-weight: 800px;
+}
+#nutrition{
+    margin-top: 10px;
+}
+#nutrition h5{
+    margin: 0px;
+    text-align: left;
+    color: #854632;
+    font-family: "Young Serif", serif;
+    margin-bottom: 5px;
+}
+#nutrition p{
+    font-size: 8px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Outfit", "sans-serif";
+    color: #5F564D;
+    line-height: 12px;
+    margin-bottom: 10px;
+}
+#nutrition table{
+    font-size: 8px;
+    text-align: left;
+    margin: 0px;
+    padding: px;
+    font-family: "Outfit", "sans-serif";
+    color: #5F564D;
+    line-height: 12px;
+    /* border: 2px solid red; */
+    width: 352px;
+    border-collapse: collapse;
+
+}
+#nutrition table tr {
+    border: none;
+    border-bottom: 0.1px solid grey;
+     /* Add bottom border to separate rows */
+}
+#nutrition table td{
+    padding: 4px;
+    padding-left: 10px;
+}
+
+#nutrition table tr:last-child {
+    border-bottom: none; /* Remove bottom border for the last row to prevent an extra line at the bottom */
+}
+.tdata{
+    color: #854632 ;
 }
