@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+body{
+    background-color: #F3E5D7;
+}
+#main-container{
+    height: 736px;
+    width: 352px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    padding: 18px;
+    text-align: center;
+    border: 2px solid red;
+    
+}
+#image-container{
+    width: 352px;
+}
+#image-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#content-container{
+    padding: px;
+    border: 2px solid blue;
+    width: 352px;
+}
+#content-container h3{
+    text-align: left;
+    font-family: "Young Serif", serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+#title p{
+    font-size: 9px;
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+#title{
+    margin-bottom: 32px;
+}
+#preparation{
+    background-color: #FFECF5 ;
+    padding: 0px;
+    font-family: "Outfit", "sans-serif";
+    width: 100%;
+    color: #5F564D;
+    border: 2px solid green;
+    margin-top: 0px;
+}
+#preparation h6{
+    text-align: left;
+    color: #7A284E;
+    padding: 10px;
+    margin: 0px;
+}
+#prep-list{
+    text-align: left; 
+    font-size: 8px;   
+    padding: 0px;
+    line-height: 15px;
+    border: 2px solid black;
+    width: 100%;
+}
+#prep-list ul{
+    text-align: left;
+    padding: 0px;
+    padding-left: 20px;
+    margin: 0px;
+}
+#prep-list ul li{
+    color: #7A284E;
+}
