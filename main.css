@@ -17,8 +17,8 @@ body{
     background-color: #F3E5D7;
 }
 #main-container{
-    height: 756px;
-    width: 352px;
+    height: auto;
+    width: 80%;
     background-color: white;
     border-radius: 10px;
     margin: auto;
@@ -26,12 +26,13 @@ body{
     top: 80px;
     padding: 18px;
     text-align: center;
+    overflow: auto;
     /* border: 2px solid red; */
     
 }
 #image-container{
-    width: 352px;
-    margin: 0px;
+    width: 95%;
+    margin: auto;
     margin-bottom: 10px;
 }
 #image-container img{
@@ -42,7 +43,8 @@ body{
 #content-container{
     padding: 0px;
     /* border: 2px solid blue; */
-    width: 352px;
+    width: 95%;
+    margin:auto;
 }
 
 #content-container h3{
@@ -53,7 +55,7 @@ body{
 
 }
 #title p{
-    font-size: 7px;
+    font-size: 15px;
     text-align: left;
     font-family: "Outfit", sans-serif;
     font-weight: 200;
@@ -62,9 +64,13 @@ body{
 }
 
 #title{
+    margin: auto;
     margin-bottom: 10px;
+        overflow: auto;
 }
 #preparation{
+        overflow: auto;
+    width: 95%;
     background-color: #FFECF5 ;
     padding: 0px;
     padding-bottom: 10px;
@@ -72,10 +78,11 @@ body{
     width: 100%;
     color: #5F564D;
     /* border: 2px solid green; */
+    margin: auto;
     margin-top: 0px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
-#preparation h6{
+#preparation h6{    font-size: 15px;
     text-align: left;
     color: #7A284E;
     padding: 10px;
@@ -83,16 +90,16 @@ body{
 }
 #prep-list{
     text-align: left; 
-    font-size: 8px;   
+    font-size: 15px;   
     padding: 0px;
-    line-height: 15px;
+    line-height: 20px;
     /* border: 2px solid black; */
     width: 100%;
 }
 #prep-list ul{
     text-align: left;
     padding: 0px;
-    padding-left: 20px;
+    padding-left: 3%;
     margin: 0px;
 }
 #prep-list ul li::marker{
@@ -100,10 +107,12 @@ body{
 }
 #ingredients{
     /* border: 2px solid brown; */
+        overflow: auto;
     margin-top: 10px;
     border-bottom: 1px solid gray;
 }
 #ingredients h5{
+        font-size: 20px;
     color: #854632;
     text-align: left;
     margin-top: 0px;
@@ -112,50 +121,55 @@ body{
 }
 #ingredients ul{
     padding: 0px;
-    font-size: 8px;
+    font-size: 15px;
     text-align: left;
-    padding-left:12px ;
-    line-height: 13px;
+    padding-left:2% ;
+    line-height: 20px;
     font-family: "Outfit", "sans-serif";
 }
 #ingredients ul li::marker{
     color: #854632;
 }
 #instructions{
+        overflow: auto;
     margin-top: 10px;
     border-bottom: 1px solid grey;
 }
 #instructions h5{
+        font-size: 20px;
     margin: 0px;
     text-align: left;
     color: #854632;
     font-family: "Young Serif", serif;
 }
 #instructions ol{
-    font-size: 8px;
+    font-size: 15px;
     text-align: left;
     margin: 0px;
     padding: 0px;
-    padding-left: 10px;
+    padding-left: 2%;
     font-family: "Outfit", "sans-serif";
     color: #5F564D;
-    line-height: 12px;
+    line-height: 20px;
 }
 #instructions ol li{
-    padding-left: 10px;
+    padding-left: 1%;
 }
 .step-header{
     font-weight: 500;
+    color: black;
 }
 #instructions ol li::marker{
-    font-size: 8px;
+    font-size: 15px;
     color: #854632;
     font-weight: 800px;
 }
 #nutrition{
     margin-top: 10px;
+        overflow: auto;
 }
 #nutrition h5{
+    font-size: 20px;
     margin: 0px;
     text-align: left;
     color: #854632;
@@ -163,25 +177,25 @@ body{
     margin-bottom: 5px;
 }
 #nutrition p{
-    font-size: 8px;
+    font-size: 15px;
     text-align: left;
     margin: 0px;
     padding: 0px;
     font-family: "Outfit", "sans-serif";
     color: #5F564D;
-    line-height: 12px;
+    line-height: 20px;
     margin-bottom: 10px;
 }
 #nutrition table{
-    font-size: 8px;
+    font-size: 15px;
     text-align: left;
     margin: 0px;
     padding: px;
     font-family: "Outfit", "sans-serif";
     color: #5F564D;
-    line-height: 12px;
+    line-height: 20px;
     /* border: 2px solid red; */
-    width: 352px;
+    width: 100%;
     border-collapse: collapse;
 
 }
@@ -200,4 +214,21 @@ body{
 }
 .tdata{
     color: #854632 ;
+}
+@media screen and (max-width: 768px) {
+  #content-container h3 {
+    width: 70%;
+    font-size: 1.2rem; 
+  }
+
+  #prep-list, #ingredients ul, #instructions ol {
+    line-height: 1.4; 
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #main-container {
+    width: 70%; /* Adjust width for tablets */
+  }
 }
